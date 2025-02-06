@@ -34,7 +34,7 @@
 <br>
 <label for="birthdate">Birthdate</label>
 <br>
-<input type="date" required max="2025-02-03" id="birthdate" id="birthdate">
+<input type="date" required max="2025-02-03" name="birthdate" id="birthdate">
 <br>
 <br>
 <label for="email">Email</label>
@@ -48,11 +48,70 @@
 <input type="password" required minlength="8" placeholder="enter a password" name="password" id="password">
 <br>
 <br>
-<input type="submit" value="Create  User">
+<label>Skills</label>
+<br>
+<input type="checkbox" name="skill" value="1" checked>swimming
+<input type="checkbox" name="skill" value="2" checked >Writing
+<input type="checkbox" name="skill" value="3" >drawing
+<input type="checkbox" name="skill" value="4">
+
+<br>
+<br>
+<label>Gender</label>
+<br>
+<input type="radio" name="gender" value="f" >Female
+<input type="radio" name="gender" value="m">Male
+
+
+
+<br>
+<br>
+<label>Countery</label>
+<br>
+<select name="country" id="countery" multiple>
+<option value="Jordan">Jordan</option>
+<option value="Palestine">Palestine</option>
+<option value="yamen">Yamen</option>
+<option value="syria">Syria</option>
+<option value="Jordan">Jordan</option>
+<option value="Palestine">Palestine</option>
+<option value="yamen">Yamen</option>
+<option value="syria">Syria</option>
+
+
+</select>
+<br>
+
+
+<br>
+<input type="list" list="country" name="country">
+
+<datalist name="country" id="countery" >
+<option value="Jordan">Jordan</option>
+<option value="Palestine">Palestine</option>
+<option value="yamen">Yamen</option>
+<option value="syria">Syria</option>
+<option value="Jordan">Jordan</option>
+<option value="Palestine">Palestine</option>
+<option value="yamen">Yamen</option>
+<option value="syria">Syria</option>
+
+
+
+
+
+</datalist>
+
+
+
+
+
+<br>
+<br>
+<input type="submit" value="Save">
 <br>
 <br>
 
-<hr>
 
 </form>
 </body>
