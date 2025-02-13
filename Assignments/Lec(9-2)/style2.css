@@ -1,0 +1,7 @@
+section{height: 100vh;border: 5px blueviolet solid;}
+img{size: 40%;border: 5px blue;}
+p{size: 60%; border: 5px red solid;}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;}

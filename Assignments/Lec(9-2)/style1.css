@@ -1,0 +1,16 @@
+div{
+    border: 3px solid #6a0f9b;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+   } 
+
+.one{
+
+}
+.two{
+   margin-top: 10px; 
+}
+.three{
+   padding: 10px; 
+}

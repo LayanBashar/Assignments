@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+       }
+
+
+.section{
+    height: 100vh;
+      }
+
+
+.border{
+    border: 3px solid darkblue;
+       }
+
+
+
+img{
+    width: 40%;
+   }  
+   
+   
+       
+span{  
+    width: 60%;
+    }           
