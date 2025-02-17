@@ -1,0 +1,52 @@
+header{
+background-color: whitesmoke;
+display: flex;
+justify-content:space-between;
+padding: 1rem;
+align-items: center;
+
+      }
+
+
+nav{
+
+   }
+
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+    
+ }
+
+
+.flex2{
+   
+    
+    }
+
+    
+.button1{
+        background-color:#ee774e;
+        color: white;
+        border-radius: 50px;
+        border-color:#ee774e;
+        padding: 5px;
+        font-weight:100;
+        
+
+
+       }
+
+
+select{
+      border-radius: 50px; 
+      background-color:whitesmoke ;
+      padding: 5px;
+      justify-content: center;
+        
+
+
+       }      
