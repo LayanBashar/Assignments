@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #212121;
+  display: flex;
+  width: 100vw;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+
+.right-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.right-section-header select {
+  color: #b4b4b4;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #212121;
+}
+
+.right-section-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+  flex: 1;
+}
+
+.side-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-nav-header i {
+  color: #ececec;
+}
+
+.side-nav-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 15px;
+}
+
+.side-nav-content a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ecececec;
+}
+
+.right-section-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.right-section-main h1 {
+  color: #ececec;
+  padding: 20px;
+}
+
+.right-section-main input {
+  width: 550px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #303030;
+}
+
+.right-section-main button {
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #9b9b9b;
+  margin: 8px;
+}
+
+.right-section-header option {
+  color: #ececec;
+}
