@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#video-bg {
+  position: relative;
+}
+
+#video-bg video {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+}
+
+#video-bg .content {
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#img-bg {
+  position: relative;
+}
+
+#img-bg img {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+#img-bg .content {
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 20px; /* المسافة بين العناصر */
+  overflow-x: auto; /* السماح بالتمرير الأفقي */
+  white-space: nowrap; /* منع العناصر من النزول لسطر جديد */
+  scroll-snap-type: x mandatory; /* تحسين تجربة التمرير */
+  -webkit-overflow-scrolling: touch; /* سلاسة التمرير في الهواتف */
+}
+
+.gallery-container::-webkit-scrollbar {
+  display: none; /* إخفاء شريط التمرير */
+}
+
+.gallery-item {
+  flex: 0 0 auto; /* تأكد أن العنصر لا يتغير حجمه */
+  scroll-snap-align: start; /* يجعل العنصر يتوقف عند بداية التمرير */
+}
+
+/* عند تصغير الشاشة، يظهر فقط عنصر واحد */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 100%; /* جعل الصورة تأخذ كامل العرض */
+  }
+}
+
+.text-color {
+  color: #b9b9bb !important;
+  fill: #b9b9bb !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* يجعل اللون أبيض */
+}

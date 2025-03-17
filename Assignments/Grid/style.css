@@ -1,0 +1,13 @@
+.parent {
+  display: grid;
+  grid-template-columns: 50px 1fr 40px 20%;
+  grid-template-rows: repeat(3, 33px) 20%;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.child {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
