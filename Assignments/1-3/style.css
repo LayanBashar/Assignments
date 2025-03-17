@@ -1,0 +1,65 @@
+/* .parent > * {
+  background-color: gainsboro;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  transform: translate(100px, 100px);
+} */
+
+/* .parent > * {
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    transform: scale(2,2)
+  } */
+
+/* .parent > * {
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    transform:rotate(45deg)
+  } */
+
+/* .parent > * {
+  background-color: gainsboro;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  transition: all 2s;
+  width: 200px;
+}
+
+.parent > *:hover {
+  width: 500px;
+  background-color: rgb(44, 43, 43);
+} */
+
+.parent > * {
+  background-color: gainsboro;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  animation: move 3s infinite;
+  width: 200px;
+  height: 300px;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(100px, 0);
+  }
+  40% {
+    transform: translate(100px, 100px);
+  }
+  60% {
+    transform: translate(0, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

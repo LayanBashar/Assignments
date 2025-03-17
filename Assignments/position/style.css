@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  opacity: 0.7;
+}
