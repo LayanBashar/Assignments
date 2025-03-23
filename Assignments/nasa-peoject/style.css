@@ -79,3 +79,11 @@
 .navbar-toggler-icon {
   filter: invert(1); /* يجعل اللون أبيض */
 }
+
+.pause {
+  background-color: rgb(71, 70, 70);
+}
+
+.space {
+  letter-spacing: 10px;
+}
