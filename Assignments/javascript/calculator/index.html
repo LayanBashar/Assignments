@@ -4,49 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <div class="parent">
-      <div class="container">
-        <div><input type="text" /></div>
-        <div class="row">
-          <button>C</button>
-          <button>(</button>
-          <button>)</button>
-          <button>/</button>
-        </div>
+    <script src="script.js"></script>
 
-        <div class="row">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>*</button>
-        </div>
-
-        <div class="row">
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>-</button>
-        </div>
-
-        <div class="row">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>+</button>
-        </div>
-
-        <div class="row">
-          <button>DEL</button>
-          <button>0</button>
-          <button>.</button>
-          <button>=</button>
-        </div>
-      </div>
+    <div class="calculator">
+      <h2>calculator</h2>
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <input type="number" id="num2" placeholder=" Enter second number" />
+      <br />
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('*')">×</button>
+      <button onclick="calculate('/')">÷</button>
+      <div id="result">Result:</div>
     </div>
   </body>
 </html>
