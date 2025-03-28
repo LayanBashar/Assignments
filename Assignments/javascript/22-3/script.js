@@ -32,3 +32,23 @@
 // console.log(returnExamObj());
 
 //////////////////////////////////////////////////////////////////
+//map *3
+
+// array = [1, 2, 3, 4, 5, 6];
+// array = array.map((x) => x * 3);
+// console.log(array);
+//////////////////////////////////////////////////////////////////
+//filter+indexOf to make array unique
+// array = [1, 2, 2, 3, 4, 5, 3, 2];
+// array = array.filter((num, index, array) => array.indexOf(num) === index);
+// console.log(array);
+///////////////////////////////////////////////////////////////////
+//sort by age
+// let arr = [
+//   { name: "hussam", age: 30 },
+//   { name: "Ali", age: 40 },
+//   { name: "Ahmad", age: 22 },
+// ];
+
+// arr.sort((a, b) => a.age - b.age);
+// console.log(arr);
