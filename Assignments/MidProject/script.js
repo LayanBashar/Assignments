@@ -80,7 +80,6 @@ const handleFormData = (e) => {
   const errorInputs = document.querySelectorAll(".form-group .error");
   if (errorInputs.length > 0) return;
 
-  // إذا ما في أخطاء، أضف المستخدم
   class UserData {
     constructor(name, email, phonenumber, address, gender) {
       this.name = name;
