@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabDiv ">
+      <button
+        class="tablink"
+        onclick="openPage('addUser', this, '#2c6975')"
+        id="defaultOpen"
+      >
+        Add User
+      </button>
+      <button
+        class="tablink"
+        onclick="openPage('previewUsers', this, '#2c6975 ')"
+      >
+        Preview Users
+      </button>
+    </div>
+
+    <div class="">
+      <div id="addUser" class="tabcontent">
+        <div class="formBox">
+          <form action="" id="form">
+            <div class="form-group email">
+              <label for="email">Email Address</label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="form-group name">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group phonenumber">
+              <label for="phonenumber">Phone Number</label>
+              <input
+                name="phonenumber"
+                type="tel"
+                id="phonenumber"
+                placeholder="Enter your number"
+              />
+            </div>
+            <div class="form-group address">
+              <label for="address">address</label>
+              <textarea
+                name="address"
+                id="address"
+                placeholder="Enter your address"
+              ></textarea>
+            </div>
+            <div class="form-group gender">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="" selected disabled>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-group submit-btn">
+              <input type="submit" value="Submit" id="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="previewUsers" class="tabcontent">
+          <button
+            id="toggleBtn"
+            onclick="hideShow()"
+            class="d-flex justify-content-center"
+          >
+            Card View
+          </button>
+          <div id="table" class="">
+            <table
+              id="tableOfUsers"
+              class="table table-bordered text-center w-100"
+            >
+              <thead>
+                <th>Email Address</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>address</th>
+                <th>Gender</th>
+              </thead>
+            </table>
+          </div>
+          <div id="card">
+            <div class="row" id="cardSection"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
