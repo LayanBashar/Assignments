@@ -1,15 +1,17 @@
 {
-  "name": "lecture-1",
+  "name": "lecture-2",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "sillyname": "^0.1.0"
+    "inquirer": "^12.5.2",
+    "qr-image": "^3.2.0"
   }
 }

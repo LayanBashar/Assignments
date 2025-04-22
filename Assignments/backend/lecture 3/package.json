@@ -1,15 +1,18 @@
 {
-  "name": "lecture-1",
+  "name": "lecture-3",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "sillyname": "^0.1.0"
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   }
 }
