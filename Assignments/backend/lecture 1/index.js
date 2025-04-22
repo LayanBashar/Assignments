@@ -15,3 +15,11 @@
 //   console.log(data.toUpperCase());
 // });
 ////////////////////////////////////////////////
+// var generateName = require("sillyname");
+// var name = generateName();
+// console.log(`my name is ${name}`);
+/////////////////////////////////////////////////
+//module way
+import sillyname from "sillyname";
+var name = sillyname();
+console.log(`My name is ${name}`);
