@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <% if (locals.randomname1 && locals.randomname2) {%>
+  
+  <h4><%= randomname1 %> <%= randomname2 %></h4>
+<% } %>
+
+<form action="/submit" method="post">
+    <label for="submit">click for random name</label>
+    <input type="submit" value="submit">  
+
+</form>
+
+<%- include('partials/footer.ejs') %></html>
+</body>

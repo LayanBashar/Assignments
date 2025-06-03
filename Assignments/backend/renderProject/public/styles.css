@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 241);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.post {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+  align-items: center;
+  gap: 5px;
+}
+
+.post > h2 {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post > p {
+  width: 100%;
+}
+
+.post > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.newForm {
+  border: 1px solid black;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.newForm > input,
+.newForm > textarea {
+  padding: 10px;
+}
+
+.newForm > label {
+  font-size: 24px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.newForm > .publish {
+  background-color: transparent;
+  width: 100px;
+}
+
+.publish:hover {
+  background-color: black;
+  color: beige;
+}
+
+.Back {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+body > p {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bolder;
+}

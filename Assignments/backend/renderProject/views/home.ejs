@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>My blog</h1>
+      <a href="/newPost" id="newPost"
+        >new post <span class="material-symbols-outlined"> add </span></a
+      >
+    </div>
+
+    <% if(posts.length===0) {%>
+    <p>There is no posts yet</p>
+    <% }else { posts.forEach(post => { %>
+    <div class="post">
+      <h2><%= post.title %></h1>
+      <p><%= post.content %></p>
+      <div>
+        <a href="/deletePost/<%= post.id %>">delete post</a>
+        <a href="/editPost/<%= post.id %>">edit post</a>
+      </div>
+    </div>
+
+    <% });} %>
+  </body>
+</html>
