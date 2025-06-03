@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new"
+    />
+  </head>
+  <body>
+    <a href="/" class="Back">
+      <span class="material-symbols-outlined"> arrow_back_ios_new</span>
+    </a>
+
+    <div class="box">
+      <form action="/editPost/<%= post.id %>" method="POST" class="newForm">
+        <label for="">Title</label><br />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          value="<%= post.title %>"
+        /><br />
+        <label for="">Content</label><br />
+        <textarea name="content" id="content" required>
+<%= post.content %></textarea
+        ><br />
+        <input type="submit" value="publish" class="publish" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,8 @@
+//express framework
 import express from "express";
+//middleware
 import bodyParser from "body-parser";
-//for access html
+//for access html file
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -17,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //costume middleware
 
 function saveToDb(req, res, next) {
+  //error
   if (req.body) {
     userInfo.email = req.body["email"];
     userInfo.password = req.body["password"];
