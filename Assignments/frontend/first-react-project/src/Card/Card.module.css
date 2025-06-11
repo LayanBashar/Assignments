@@ -1,0 +1,19 @@
+.card {
+  border: 1px solid brown;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px (0, 0%, 0%, 0.1);
+  text-align: center;
+  max-width: fit-content;
+  padding: 1rem;
+  background-color: bisque;
+}
+
+.staffCard {
+  border: 1px solid rgb(209, 204, 204);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px (0, 0%, 0%, 0.1);
+  text-align: center;
+  max-width: fit-content;
+  padding: 1rem;
+  background-color: rgb(134, 82, 19);
+}
